@@ -1,0 +1,26 @@
+//base style
+@import 'base/variables';
+@import 'base/base';
+//modules
+@import 'modules/backgrounds';
+@import 'modules/button';
+//styles for blocks
+@import 'blocks/header';
+
+@import 'blocks/information-for-user';
+@import 'blocks/language';
+@import 'blocks/money';
+@import 'blocks/logo';
+@import 'blocks/menu';
+@import 'blocks/bag';
+@import 'blocks/card';
+@import 'blocks/catalog';
+@import 'blocks/registration';
+@import 'blocks/right';
+@import 'blocks/footer';
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url(//db.onlinewebfonts.com/c/0ca5d3ce1e4b26b2759ae4e921f8360b?family=Didot);
+

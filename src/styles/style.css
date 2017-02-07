@@ -88,6 +88,11 @@ select:hover {
   font-family: "GilroyBold", sans-serif;
   font-weight: bold;
   line-height: 62px; }
+  .popup-order__button:hover {
+    background: #323232;
+    -webkit-transition: all  linear;
+    transition: all linear;
+    transition-duration: 2s; }
 
 .doska {
   position: relative;
@@ -150,14 +155,14 @@ select:hover {
   background: black;
   -webkit-transition: all  linear;
   transition: all linear;
-  transition-duration: 10s;
+  transition-duration: 0.2s;
   opacity: 0.7; }
 
 .product-card {
   height: 613px;
   width: 237px;
   text-align: center;
-  background: rgba(204, 88, 127, 0.5); }
+  background: url(../images/card-background.png) 0 0 no-repeat; }
   .product-card__title {
     font-family: "Bebas Neue";
     margin-bottom: 19px; }
@@ -187,7 +192,7 @@ select:hover {
     width: 100px;
     height: 150px;
     overflow: hidden;
-    margin-left: 34px; }
+    margin-left: 4px; }
   .product-card__button-container {
     width: 68px;
     height: 51px;
@@ -200,16 +205,23 @@ select:hover {
   background: transparent;
   border: none;
   font-size: 24px;
-  width: 70px;
+  width: 100px;
   height: 50px; }
+
+#modal_form {
+  width: 473px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -305px;
+  display: none;
+  z-index: 5; }
 
 .popup-order {
   background: white;
   width: 473px;
   height: 100%;
   top: 0;
-  right: -474px;
-  z-index: 99999999;
   position: absolute; }
   .popup-order__title-container {
     position: relative;

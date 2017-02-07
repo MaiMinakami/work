@@ -45,4 +45,11 @@
 	font-weight:bold;
 	line-height:62px;
 
+	&:hover{
+		background:#323232;
+		-webkit-transition: all  linear;
+		transition: all linear;
+		transition-duration: 2s;
+	}
+
 }

@@ -6,8 +6,8 @@
 //base style
 @import 'base/variables';
 @import 'base/base';
-
 //modules
+
 @import 'titles/titles';
 @import 'modules/button';
 
@@ -21,6 +21,7 @@
 @import 'blocks/dropdown';
 @import 'blocks/popup-order';
 @import 'blocks/popup-card';
+
 
 //fonts
 @font-face {
@@ -50,8 +51,8 @@
     src: url('../font/gilroy-extrabold-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-}
-;
+};
+
 @font-face {
     font-family: 'GilroyLight';
     src: url('../font/Gilroy-Light.otf') format('otf');
@@ -59,4 +60,5 @@
     src: url('../font/gilroy-light-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+
 };

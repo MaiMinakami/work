@@ -250,7 +250,7 @@
 				'keyup.easyDropDown': function(){
 					self.resetQuery = setTimeout(function(){
 						self.query = '';
-					},1200);
+					},3200);
 				}
 			});
 			

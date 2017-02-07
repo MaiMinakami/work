@@ -135,7 +135,7 @@
 	height: 0;
 	left: -1px;
 	right: -1px;
-	top: 100%;
+	top: -60px;
 	margin-top: -1px;
 	/*background: #fff;*/
 	background: transparent;
@@ -152,6 +152,10 @@
 .dropdown.open div{
 	opacity: 1;
 	z-index: 2;
+	top: 30px;
+	-webkit-transition: top  linear;
+		transition: top linear;
+		transition-duration: 2s;
 }
 
 /* FADE OVERLAY FOR SCROLLING LISTS */
@@ -174,16 +178,20 @@
 /* DROP DOWN LIST */
 
 .dropdown ul{
+	background: #b64d6f;
+    opacity: 0.5;
 	position: absolute;
 	left: 0;
 	top: 0;
 	/*height: 100%;*/
-height: 200px;
+height: 108px;
 	width: 100%;
 	list-style: none;
 	/*overflow: hidden;*/
-	overflow: scroll;
+	/*overflow: overlay;*/
+	overflow: auto;
 }
+
 
 .dropdown.scrollable.open ul{
 	overflow-y: auto;

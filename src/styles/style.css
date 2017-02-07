@@ -1,327 +1,330 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
-@import url(//db.onlinewebfonts.com/c/0ca5d3ce1e4b26b2759ae4e921f8360b?family=Didot);
+@import url(vendor/easydropdown.css);
+@import url(vendor/bootstrap.css);
+@import url(vendor/bootstrap-theme.css);
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  color: #999999;
-  width: 1440px;
-  margin: auto;
-  font-family: "Lato", sans-serif;
-  font-weight: bold; }
-  body .container {
-    width: 1142px;
-    margin: auto; }
+  color: white;
+  text-transform: uppercase;
+  position: relative; }
+
+.container {
+  width: 1140px; }
+
+h1 {
+  font-size: 45px; }
+
+h2 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0; }
+
+h3 {
+  font-size: 24px; }
 
 a:hover,
 a:focus,
 a:visited,
 a:link {
-  color: #999999;
   text-decoration: none; }
 
 button:focus,
 button:active,
 button:hover {
+  outline: 0; }
+
+select:focus,
+select:active,
+select:hover {
   outline: 0;
-  border: red; }
-
-.background-header {
-  position: relative; }
-  .background-header:after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    border-bottom: 1px solid #999999;
-    position: absolute;
-    top: 42px; }
-  .background-header:before {
-    content: '';
-    width: 100%;
-    height: 2px;
-    border-bottom: 1px solid #999999;
-    position: absolute;
-    top: 141px; }
-
-.button-load-more {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  letter-spacing: 1px;
-  border: none;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #999999; }
-
-.button-email {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: 2px solid #a0d0f0;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 12px;
-  border-radius: 40px;
-  text-align: left;
-  padding-left: 25px;
-  color: white;
-  position: relative;
-  letter-spacing: 1px; }
-  .button-email:after {
-    content: '';
-    background: url(../images/registration_arrow.png) 0 0 no-repeat;
-    position: absolute;
-    width: 11px;
-    height: 11px;
-    top: 18px;
-    left: 272px; }
-
-.button-card {
-  font-size: 11px;
-  height: 23px;
-  width: 50px;
-  background: #197dd6;
-  border-radius: 50px;
   border: transparent;
+  background: transparent; }
+
+.title-page {
   color: white;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  position: absolute;
-  top: 27px;
-  left: 26px; }
-
-.header {
-  margin-bottom: 81px; }
-  .header__top-part {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 100%;
-    height: 44px; }
-  .header__bottom-part {
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    align-items: center; }
-  .header__dropdown {
-    display: flex;
-    width: 150px;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    height: 44px;
-    align-items: center; }
-
-.information-for-user {
-  display: flex;
+  font-size: 48px;
   text-align: center;
-  width: 206px;
-  justify-content: space-between; }
-  .information-for-user__cell {
-    list-style: none;
-    font-size: 11px;
-    text-transform: uppercase;
-    width: 61px;
-    height: 44px;
-    line-height: 44px; }
+  font-family: "Evogria";
+  margin-top: 163px;
+  margin-bottom: 77px; }
 
-.language {
-  width: 52px;
-  position: relative;
-  height: 24px; }
-  .language__arrow {
-    width: 13px;
-    height: 13px;
-    background: url(../images/dropdown_arrow_icon.png) no-repeat;
-    position: absolute;
-    top: 8px;
-    left: 42px;
-    border: none; }
-  .language__title {
-    text-transform: uppercase;
-    list-style: none;
-    font-size: 12px;
-    line-height: 24px;
-    text-align: center; }
-  .language__hide {
-    display: none;
-    line-height: 24px; }
-
-.money {
-  position: relative;
-  height: 24px;
-  position: relative; }
-  .money__arrow {
-    width: 13px;
-    height: 13px;
-    background: url(../images/dropdown_arrow_icon.png) no-repeat;
-    position: absolute;
-    top: 8px;
-    left: 70px;
-    border: none; }
-  .money__title {
-    letter-spacing: 1px;
-    font-size: 12px;
-    list-style: none;
-    width: 92px;
-    line-height: 24px;
-    text-transform: uppercase; }
-  .money__hide {
-    display: none;
-    height: 24px; }
-
-.logo {
-  font-size: 25px;
-  clear: both;
-  font-family: "Didot", sans-serif;
-  color: #333333; }
-  .logo span {
-    font-size: 31px; }
-
-.menu {
-  display: inline-flex;
-  align-items: center;
-  height: 70px;
-  width: 577px;
-  justify-content: space-around; }
-  .menu--catalog {
-    display: flex;
-    margin: auto;
-    width: 680px; }
-  .menu__cell {
-    list-style: none;
-    padding: 5px 10px;
-    line-height: 44px;
-    text-transform: uppercase;
-    font-size: 12px;
-    text-decoration: none;
-    letter-spacing: 1px; }
-    .menu__cell span:hover {
-      color: red; }
-
-.active span {
-  display: inline;
-  border-bottom: 2px solid blue;
-  padding-bottom: 3px;
-  color: #333333; }
-
-.bag {
-  display: flex;
-  height: 70px;
-  align-items: center; }
-  .bag__title {
-    width: 88px;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 1px; }
-  .bag__number-of-goods {
-    width: 43px;
-    height: 43px;
-    border-radius: 25px;
-    border: 2px solid #197dd6;
-    line-height: 43px;
-    text-align: center;
-    font-size: 13px; }
-  .bag__search-container {
-    position: relative;
-    margin-left: 11px;
-    margin-top: 10px; }
-  .bag__search {
-    top: 35px;
-    position: absolute;
-    display: none; }
-  .bag__search-icon {
-    border: transparent;
-    border: none;
-    margin-left: 8px;
-    width: 18px;
-    height: 21px;
-    background: url(../images/search-icon.png) 0 0 no-repeat; }
-
-.card {
-  width: 265px;
-  height: 413px;
-  text-align: center;
-  margin-bottom: 27px;
-  position: relative; }
-  .card__image-container {
-    width: 265px;
-    height: 337px;
-    overflow: hidden; }
-  .card__title {
-    font-size: 16px;
-    font-family: "Playfair Display", serif;
-    color: #333333;
-    margin-top: 21px;
-    margin-bottom: 7px; }
-  .card__price {
-    color: #999999;
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: normal;
-    padding-right: 10px; }
-    .card__price--new-price {
-      color: #fc411d;
-      margin-left: 15px; }
-
-.catalog__menu {
-  margin-bottom: 19px; }
-.catalog__title {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  font-size: 58px;
-  color: #333333;
-  margin-bottom: 26px; }
-.catalog__cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-.catalog__button-load-more {
-  width: 150px;
-  height: 30px;
-  margin: auto;
-  margin-top: 13px;
-  margin-bottom: 50px; }
-
-.registration {
-  height: 288px;
+.product-card__button {
   width: 100%;
-  background-size: cover;
-  text-align: center;
-  background: url(../images/registration-background.png) 0 0 no-repeat; }
-  .registration__title {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #999999;
-    font-family: "Lato", sans-serif;
-    font-weight: bold;
-    padding-top: 67px; }
-  .registration__subtitle {
-    font-size: 38px;
-    font-family: "Playfair Display", serif;
-    color: white;
-    margin-top: 9px;
-    margin-bottom: 23px; }
-  .registration__button {
-    width: 304px;
-    height: 53px;
-    margin: auto; }
+  height: 100%;
+  background: transparent;
+  border: 3px solid white;
+  border-radius: 22px; }
+  .product-card__button:after {
+    background: url(../images/buy_icon.png) 0 0 no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    left: 50%;
+    margin-left: -20px;
+    content: '';
+    width: 39px;
+    height: 30px; }
+  .product-card__button:hover {
+    -webkit-transition: all  linear;
+    transition: all linear;
+    transition-duration: 2s;
+    background: #fff445;
+    border: 3px solid #fff445; }
+  .product-card__button:hover:after {
+    background: url(../images/buy-hover.png) 0 0 no-repeat;
+    -webkit-transition: all  linear;
+    transition: all linear;
+    transition-duration: 2s; }
 
-.rights {
-  font-size: 12px;
-  font-family: "Lato", sans-serif;
+.popup-order__button {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: #faa21b;
+  border: none;
+  font-size: 18px;
+  font-family: "GilroyBold", sans-serif;
   font-weight: bold;
-  color: #999999;
-  letter-spacing: 1px; }
+  line-height: 62px; }
 
-.footer {
-  display: flex;
-  height: 102px;
-  align-items: center;
-  justify-content: space-between; }
+.doska {
+  position: relative;
+  height: auto; }
+
+.doska:after {
+  background: url(../images/doska.png) 0 0 no-repeat;
+  width: 100%;
+  height: 22px;
+  position: absolute;
+  top: 341px;
+  left: 15px;
+  content: ''; }
+
+::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 0px; }
+
+::-webkit-scrollbar-track {
+  background-color: transparent; }
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color: #923f5c; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #923f5c; }
+
+::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 2px;
+  height: 0px; }
+
+::-webkit-scrollbar {
+  width: 4px; }
+
+.background-mainpage {
+  background: url(../images/main-background.png) 0 0 no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 150px; }
+
+.background-transparent {
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  background: red;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0; }
+
+.active-transparent {
+  z-index: 5;
+  background: black;
+  -webkit-transition: all  linear;
+  transition: all linear;
+  transition-duration: 10s;
+  opacity: 0.7; }
+
+.product-card {
+  height: 613px;
+  width: 237px;
+  text-align: center;
+  background: rgba(204, 88, 127, 0.5); }
+  .product-card__title {
+    font-family: "Bebas Neue";
+    margin-bottom: 19px; }
+  .product-card__image-container {
+    width: 180px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden; }
+  .product-card__description {
+    margin: 40px 0 5px 0;
+    font-family: "Bebas Neue"; }
+  .product-card__prise {
+    margin: auto;
+    overflow: hidden;
+    font-family: "Bebas Neue";
+    position: relative;
+    margin-bottom: 17px; }
+  .product-card__actual-prise {
+    font-size: 57px;
+    margin: 0; }
+  .product-card__old-prise {
+    font-size: 24px;
+    position: relative;
+    top: -25px;
+    text-decoration: line-through; }
+  .product-card__dropdown {
+    width: 100px;
+    height: 150px;
+    overflow: hidden;
+    margin-left: 34px; }
+  .product-card__button-container {
+    width: 68px;
+    height: 51px;
+    position: relative;
+    margin-left: 38px;
+    top: -155px;
+    left: 97px; }
+
+.dropdown {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  width: 70px;
+  height: 50px; }
+
+.popup-order {
+  background: white;
+  width: 473px;
+  height: 100%;
+  top: 0;
+  right: -474px;
+  z-index: 99999999;
+  position: absolute; }
+  .popup-order__title-container {
+    position: relative;
+    height: 225px;
+    background: #ff943d; }
+    .popup-order__title-container:before {
+      content: '';
+      height: 35px;
+      width: 25px;
+      background: url(../images/popup-order-arrow.png) 0 0 no-repeat;
+      position: absolute;
+      top: 100px;
+      left: 60px; }
+  .popup-order__title {
+    padding-left: 158px;
+    line-height: 225px;
+    font-size: 57px;
+    font-family: "Bebas Neue"; }
+  .popup-order__subtitle {
+    font-family: "GilroyLight", sans-serif;
+    color: #2f2e2e;
+    font-size: 30px;
+    margin-top: 34px;
+    margin-left: 57px;
+    font-weight: 300; }
+  .popup-order__price {
+    margin-left: 57px;
+    font-family: "GilroyLight", sans-serif;
+    color: #2f2f2f;
+    font-size: 48px;
+    font-weight: 300; }
+  .popup-order__button-container {
+    color: white;
+    width: 299px;
+    height: 62px;
+    margin-top: 50px;
+    margin-left: 84px;
+    position: relative;
+    margin-bottom: 22px; }
+    .popup-order__button-container:before {
+      content: '';
+      top: -20px;
+      left: -20px;
+      position: absolute;
+      height: 1px;
+      width: 250px;
+      border-bottom: 1px solid;
+      background-color: rgba(0, 0, 0, 0.15); }
+
+.active-position {
+  -webkit-transition: all  linear;
+  transition: all linear;
+  transition-duration: 5s;
+  right: 0; }
+
+.active {
+  -webkit-transition: all  linear;
+  transition: all linear;
+  transition-duration: 2s;
+  right: -474px; }
+
+.popup-card {
+  height: 190px;
+  width: 352px;
+  margin: auto;
+  display: table;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  margin-bottom: 2px; }
+  .popup-card__image-container {
+    width: 100px;
+    height: 190px;
+    display: table-cell;
+    vertical-align: middle; }
+  .popup-card__description {
+    display: table-cell;
+    color: #2f2e2e;
+    vertical-align: top; }
+  .popup-card__title {
+    font-family: "GilroyLight", sans-serif;
+    font-size: 19px;
+    height: 62px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-top: 32px;
+    line-height: 22px; }
+  .popup-card__subtitle {
+    font-size: 24px;
+    font-family: "GilroyLight", sans-serif;
+    text-align: left; }
+  .popup-card__price {
+    font-size: 24px;
+    font-family: "GilroyBold", sans-serif;
+    font-weight: 700;
+    text-align: left; }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../font/BebasNeue Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Evogria';
+  src: url("../font/Evogria.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'GilroyBold';
+  src: url("../font/Gilroy-ExtraBold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'GilroyLight';
+  src: url("../font/Gilroy-Light.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }
 
 /*# sourceMappingURL=style.css.map */

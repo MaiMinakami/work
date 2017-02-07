@@ -20,7 +20,7 @@ module.exports = function(grunt) {
     },
    
     dist:{
-      src:['src/js/script.js','src/js/vendor/bootstrap.js'],
+      src:['src/js/script.js','src/js/vendor/bootstrap.js','src/js/vendor/jquery.easydropdown.js'],
       dest:'public/mainscript.js'
     }
   },    

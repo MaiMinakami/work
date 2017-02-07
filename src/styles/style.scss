@@ -1,26 +1,52 @@
+//vendor
+@import 'vendor/easydropdown.css';
+@import 'vendor/bootstrap.css';
+@import 'vendor/bootstrap-theme.css';
+
 //base style
 @import 'base/variables';
 @import 'base/base';
-//modules
-@import 'modules/backgrounds';
-@import 'modules/button';
-//styles for blocks
-@import 'blocks/header';
 
-@import 'blocks/information-for-user';
-@import 'blocks/language';
-@import 'blocks/money';
-@import 'blocks/logo';
-@import 'blocks/menu';
-@import 'blocks/bag';
-@import 'blocks/card';
-@import 'blocks/catalog';
-@import 'blocks/registration';
-@import 'blocks/right';
-@import 'blocks/footer';
+//modules
+@import 'titles/titles';
+@import 'modules/button';
+
+//other styles
+@import 'other_style/doska';
+@import 'other_style/styles_for_scroll';
+@import 'other_style/background-mainpage';
+//styles for blocks
+
+@import 'blocks/product-card';
+@import 'blocks/dropdown';
+@import 'blocks/popup-order';
+@import 'blocks/popup-card';
 
 //fonts
-@import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url(//db.onlinewebfonts.com/c/0ca5d3ce1e4b26b2759ae4e921f8360b?family=Didot);
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../font/BebasNeue Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+};
 
+@font-face {
+    font-family: 'Evogria';
+    src: url('../font/Evogria.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'GilroyBold';
+    src: url('../font/Gilroy-ExtraBold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'GilroyLight';
+    src: url('../font/Gilroy-Light.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+};

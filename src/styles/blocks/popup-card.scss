@@ -1,0 +1,46 @@
+.popup-card{
+	height: 190px;
+	width:352px;
+	margin:auto;
+	display:table;
+	border-bottom:1px solid $linePopupgrey;
+	margin-bottom:2px;
+	
+
+	&__image-container{
+		width: 100px;
+		height: 190px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&__description{
+		display: table-cell;
+		color:$fontPopupgrey;
+		vertical-align: top;
+	}
+	&__title{
+		
+		font-family:$fontGilroyLight;
+		font-size: 19px;
+		height: 62px;
+		overflow: hidden;
+		margin-bottom: 15px;
+        text-align: left;
+   		margin-top: 32px;
+    	line-height: 22px;
+	}
+
+	&__subtitle{
+		font-size: 24px;
+		font-family:$fontGilroyLight;
+		text-align: left;
+	}
+
+	&__price{
+		font-size: 24px;
+		font-family:$fontGilroyBold;
+		font-weight: 700;
+		text-align: left;
+	}
+}

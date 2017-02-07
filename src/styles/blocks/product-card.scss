@@ -1,0 +1,58 @@
+.product-card{
+	height: 613px;
+	width:237px;
+	text-align:center;
+	background:rgba(204,88,127,0.5);
+
+	&__title{
+		font-family: $fontBebas;
+		margin-bottom: 19px;
+	}
+
+	&__image-container{
+		width: 180px;
+		height: 300px;
+		margin: auto;
+		overflow: hidden;
+	}
+	
+	&__description{
+		margin: 40px 0 5px 0;
+		font-family: $fontBebas;
+	}
+	&__prise{
+		margin: auto;
+		overflow: hidden;
+		font-family: $fontBebas;
+		position:relative;
+		margin-bottom: 17px;
+	}
+
+	&__actual-prise{
+		font-size: 57px;
+		margin: 0;
+	}
+
+	&__old-prise{ 
+   		font-size: 24px;
+		position:relative;
+		top:-25px;
+		text-decoration: line-through;
+	}
+
+	&__dropdown{
+		width: 100px;
+		height: 150px;
+		overflow: hidden;		
+		margin-left: 34px;
+	}
+
+	&__button-container{
+		width: 68px;
+   		 height: 51px;		
+		position: relative;
+		margin-left: 38px;
+	    top: -155px;
+    	left: 97px;
+	}
+}

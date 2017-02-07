@@ -1,0 +1,48 @@
+.product-card__button{
+	width: 100%;
+	height: 100%;
+	background:transparent;
+    border: 3px solid white;
+    border-radius: 22px;	
+
+	&:after{
+		background:url(../images/buy_icon.png)0 0 no-repeat;
+		position:absolute;
+		top:50%;
+		margin-top:-15px;
+		left:50%;
+		margin-left:-20px;
+		content:'';
+		width:39px;
+		height:30px;
+	}
+
+	&:hover{
+		-webkit-transition: all  linear;
+	  	transition: all linear;
+	   	transition-duration: 2s;
+	   	background:$yellowButtonHover;
+	   	border:3px solid $yellowButtonHover;
+	}
+
+	&:hover:after{
+			background:url(../images/buy-hover.png)0 0 no-repeat;
+			-webkit-transition: all  linear;
+		  	transition: all linear;
+		   	transition-duration: 2s;
+		}
+
+}
+
+.popup-order__button{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background:$orangeButton;	
+	border:none;
+	font-size:18px;
+	font-family:$fontGilroyBold;
+	font-weight:bold;
+	line-height:62px;
+
+}

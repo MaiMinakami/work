@@ -26,10 +26,10 @@
 	}
 
 	&:hover:after{
-			background:url(../images/buy-hover.png)0 0 no-repeat;
-			-webkit-transition: all  linear;
-		  	transition: all linear;
-		   	transition-duration: 2s;
+		background:url(../images/buy-hover.png)0 0 no-repeat;
+		-webkit-transition: all  linear;
+	  	transition: all linear;
+	   	transition-duration: 0.2s;
 		}
 
 }
@@ -49,7 +49,6 @@
 		background:#323232;
 		-webkit-transition: all  linear;
 		transition: all linear;
-		transition-duration: 2s;
+		transition-duration: 0.2s;
 	}
-
 }

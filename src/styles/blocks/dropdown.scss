@@ -2,8 +2,19 @@
 	background:transparent;
 	border:none;
 	font-size:24px;
-	width:100px;
+	width: 119px;
 	height:50px;
+	margin-left: 19px;
+	position:relative;
 
-
+	&:after{
+	    content: '';
+	    width: 65px;
+	    height: 2px;
+	    border-bottom: 3px solid white;
+	    position: absolute;
+	    top: 33px;
+	    left: 36px;
+	    z-index: 6;
+	}
 }

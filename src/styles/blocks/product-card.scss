@@ -25,7 +25,7 @@
 		overflow: hidden;
 		font-family: $fontBebas;
 		position:relative;
-		margin-bottom: 17px;
+	    margin-bottom: 20px;
 	}
 
 	&__actual-prise{
@@ -41,18 +41,18 @@
 	}
 
 	&__dropdown{
-		width: 100px;
-		height: 150px;
+		width: 138px;
+		height: 193px;
 		overflow: hidden;		
 		margin-left: 4px;
 	}
 
 	&__button-container{
 		width: 68px;
-   		 height: 51px;		
+   		height: 51px;		
 		position: relative;
-		margin-left: 38px;
-	    top: -155px;
+		margin-left: 47px;
+	    top:  -199px;
     	left: 97px;
 	}
 }

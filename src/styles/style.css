@@ -76,7 +76,7 @@ select:hover {
     background: url(../images/buy-hover.png) 0 0 no-repeat;
     -webkit-transition: all  linear;
     transition: all linear;
-    transition-duration: 2s; }
+    transition-duration: 0.2s; }
 
 .popup-order__button {
   width: 100%;
@@ -92,7 +92,7 @@ select:hover {
     background: #323232;
     -webkit-transition: all  linear;
     transition: all linear;
-    transition-duration: 2s; }
+    transition-duration: 0.2s; }
 
 .doska {
   position: relative;
@@ -119,10 +119,12 @@ select:hover {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 0px;
   border-radius: 0px;
+  height: 30px;
   background-color: #923f5c; }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #923f5c; }
+  background-color: #923f5c;
+  height: 30px; }
 
 ::-webkit-resizer {
   background-image: url("");
@@ -151,7 +153,7 @@ select:hover {
   left: 0; }
 
 .active-transparent {
-  z-index: 5;
+  z-index: 13;
   background: black;
   -webkit-transition: all  linear;
   transition: all linear;
@@ -179,7 +181,7 @@ select:hover {
     overflow: hidden;
     font-family: "Bebas Neue";
     position: relative;
-    margin-bottom: 17px; }
+    margin-bottom: 20px; }
   .product-card__actual-prise {
     font-size: 57px;
     margin: 0; }
@@ -189,24 +191,35 @@ select:hover {
     top: -25px;
     text-decoration: line-through; }
   .product-card__dropdown {
-    width: 100px;
-    height: 150px;
+    width: 138px;
+    height: 193px;
     overflow: hidden;
     margin-left: 4px; }
   .product-card__button-container {
     width: 68px;
     height: 51px;
     position: relative;
-    margin-left: 38px;
-    top: -155px;
+    margin-left: 47px;
+    top: -199px;
     left: 97px; }
 
 .dropdown {
   background: transparent;
   border: none;
   font-size: 24px;
-  width: 100px;
-  height: 50px; }
+  width: 119px;
+  height: 50px;
+  margin-left: 19px;
+  position: relative; }
+  .dropdown:after {
+    content: '';
+    width: 65px;
+    height: 2px;
+    border-bottom: 3px solid white;
+    position: absolute;
+    top: 33px;
+    left: 36px;
+    z-index: 6; }
 
 #modal_form {
   width: 473px;
@@ -215,7 +228,7 @@ select:hover {
   top: 0;
   right: -305px;
   display: none;
-  z-index: 5; }
+  z-index: 14; }
 
 .popup-order {
   background: white;
